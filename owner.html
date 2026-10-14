@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Owner | Libaas Atelier</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-p="owner">
+<header id="h"></header>
+<main class="wrap">
+<h1>Owner dashboard</h1>
+<div class="mets" id="mt"></div>
+<div class="card"><h3>All orders</h3><div class="scroll" id="ot"></div></div>
+<div class="two sec">
+  <div class="card">
+    <h3>Prices</h3>
+    <div id="pr"></div>
+    <p class="msg" id="pm"></p>
+    <button class="btn" id="sp">Save prices</button>
+  </div>
+  <div class="card">
+    <h3>Clothes and designs</h3>
+    <div class="chips" id="cl"></div>
+    <form id="ad">
+      <div class="g">
+        <div><label>Add</label><select name="kind"><option value="type">Outfit type</option><option value="color">Color</option></select></div>
+        <div><label>Name</label><input name="name"></div>
+      </div>
+      <label>Color (for colors only)</label>
+      <input name="hex" type="color" value="#7FC8A9" style="height:42px"><br>
+      <button class="btn sec">Add</button>
+    </form>
+  </div>
+</div>
+<div class="card sec"><h3>Orders by status</h3><div class="bars" id="bar"></div></div>
+</main>
+<footer id="f"></footer>
+<script src="js/app.js"></script>
+</body>
+</html>

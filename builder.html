@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Outfit builder | Libaas Atelier</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-p="builder">
+<header id="h"></header>
+<main class="wrap">
+<h1>Outfit builder</h1>
+<p class="note" id="note" hidden>Suggested by our AI stylist. You can change anything.</p>
+<div class="three">
+  <div class="card">
+    <h3>Design your outfit</h3>
+    <label>Outfit type</label><div class="chips" id="gt"></div>
+    <label>Fabric</label><div class="chips" id="gf"></div>
+    <label>Color</label><div class="chips" id="gc"></div>
+    <label>Sleeves</label><div class="chips" id="gs"></div>
+    <label>Neckline</label><div class="chips" id="gn"></div>
+    <label>Length</label><div class="chips" id="gl"></div>
+  </div>
+  <div class="pv" id="pv" style="min-height:380px"></div>
+  <div class="card">
+    <h3>Your outfit</h3>
+    <p id="sum"></p>
+    <p>Total (fabric and stitching)</p>
+    <p class="total" id="tot"></p>
+    <button class="btn" id="add">Add to order</button>
+    <p class="err" id="err" role="alert"></p>
+  </div>
+</div>
+</main>
+<footer id="f"></footer>
+<script src="js/app.js"></script>
+</body>
+</html>
