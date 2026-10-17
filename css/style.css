@@ -116,3 +116,7 @@ body.dark #f h4 { color: var(--bg); }
 body.dark .btn:hover { background: #d9693f; }
 
 .tb { background: none; border: 1px solid var(--bg); color: var(--bg); border-radius: 99px; padding: 6px 14px; font: inherit; cursor: pointer; }
+/* Lab 04: contact form */
+.error { display: block; color: var(--err); font-size: .88rem; min-height: 1.2em; }
+.success { color: var(--e); font-weight: 600; margin: 12px 0 0; }
+.count { display: block; text-align: right; font-size: .85rem; color: var(--mu); }
