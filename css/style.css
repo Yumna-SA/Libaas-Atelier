@@ -85,3 +85,34 @@ th,td{padding:9px 8px;border-bottom:1px solid var(--ln);text-align:left;font-siz
   .mb { display: none; }
   nav { display: flex; }
 }
+/* Lab 04: dark mode */
+:root {
+  --card: #ffffff;
+  --note: #e3efe9;
+  --soft: #e9e8e0;
+  --err: #b3391c;
+}
+
+body.dark {
+  --bg: #111827;
+  --t: #f9fafb;
+  --mu: #aab4bf;
+  --ln: #2b3648;
+  --e: #6fd3b3;
+  --ed: #4fb898;
+  --c: #c4552f;
+  --card: #1f2937;
+  --note: #1c3a33;
+  --soft: #2b3648;
+  --err: #ff8a7a;
+}
+
+.card, input, select, textarea, .chip, .row { background: var(--card); }
+.row { color: var(--t); }
+.note, .badge { background: var(--note); }
+.steps li { background: var(--soft); }
+.msg, .err { color: var(--err); }
+body.dark #f h4 { color: var(--bg); }
+body.dark .btn:hover { background: #d9693f; }
+
+.tb { background: none; border: 1px solid var(--bg); color: var(--bg); border-radius: 99px; padding: 6px 14px; font: inherit; cursor: pointer; }
