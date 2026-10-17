@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Email: contains @ and . (and the @ is not first, the dot comes after it)
       const at = email.indexOf("@");
       const dot = email.lastIndexOf(".");
-      if (!email.includes("@") || !email.includes(".") || at < 1 || dot < at + 2 || dot === email.length - 1) {
+      if (!email.includes("@") || !email.includes(".") || at < 1 || dot < at + 2 || dot === email.length - 1 || email.indexOf("@") !== email.lastIndexOf("@") || email.includes(" ")) {
         emailErr.textContent = "Please enter a valid email.";
         valid = false;
       }
