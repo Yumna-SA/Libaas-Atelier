@@ -75,3 +75,13 @@ th,td{padding:9px 8px;border-bottom:1px solid var(--ln);text-align:left;font-siz
 @media(max-width:860px){.hero,.two,.three,.why{grid-template-columns:1fr}.steps3{grid-template-columns:1fr}.mets{grid-template-columns:1fr}.arch{max-width:340px;margin:auto}.cards4{grid-template-columns:1fr 1fr}.sech{margin-top:48px}}
 @media(max-width:700px){.mb{display:block}nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--e);flex-direction:column;align-items:stretch;padding:8px 20px 16px;text-align:center}#h.open nav{display:flex}.ord{grid-template-columns:1fr}.steps{flex-wrap:wrap}.steps li{flex:1 1 30%}.fgrid{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:no-preference){.arch svg{animation:rise .8s ease-out}@keyframes rise{from{transform:translateY(30px);opacity:0}}}
+/* Lab 04: mobile menu (JavaScript switches the "open" class on the nav) */
+@media (max-width: 700px) {
+  nav.open { display: flex; }
+}
+
+/* Lab 04: on wider screens the button is hidden and the menu is always visible */
+@media (min-width: 701px) {
+  .mb { display: none; }
+  nav { display: flex; }
+}
